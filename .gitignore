@@ -1,0 +1,5 @@
+/target/
+**/myoutput.txt
+/.classpath
+/.project
+/.settings/
