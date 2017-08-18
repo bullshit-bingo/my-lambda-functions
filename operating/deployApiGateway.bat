@@ -1,0 +1,1 @@
+echo "http://docs.aws.amazon.com/apigateway/latest/developerguide/create-api-using-awscli.html"

@@ -1,0 +1,38 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "2017-08-17T19:04:00Z",
+    "title" : "MyLambdaMicroserviceBat"
+  },
+  "host" : "mhzqspdjg5.execute-api.eu-central-1.amazonaws.com",
+  "basePath" : "/prod",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/myHelloNumberFunction" : {
+      "get" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "number",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/Empty"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Empty" : {
+      "type" : "object",
+      "title" : "Empty Schema"
+    }
+  }
+}
